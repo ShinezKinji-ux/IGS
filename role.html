@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>役割 - IGS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700;900&family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-japan">
+        <div class="sakura-petal" style="left:10%;animation-delay:0s;"></div>
+        <div class="sakura-petal" style="left:30%;animation-delay:2s;"></div>
+        <div class="sakura-petal" style="left:50%;animation-delay:4s;"></div>
+        <div class="sakura-petal" style="left:70%;animation-delay:1s;"></div>
+        <div class="sakura-petal" style="left:90%;animation-delay:3s;"></div>
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <a href="index.html" class="back-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        <span>戻る</span>
+    </a>
+
+    <div class="page-wrapper">
+        <header class="page-hero">
+            <div class="page-badge">組織構造</div>
+            <h1 class="page-title glitch-text" data-text="ROLE">ROLE</h1>
+            <p class="page-subtitle">役割 & ポジション</p>
+            <div class="page-divider">
+                <span></span><span></span><span></span>
+            </div>
+        </header>
+
+        <div class="role-list">
+            <div class="role-item" style="--role-accent: #DC143C;">
+                <div class="role-glow"></div>
+                <div class="role-avatar glitch-avatar" data-text="P">P</div>
+                <div class="role-details">
+                    <h3>Principal <span class="jp-role">校長</span></h3>
+                    <p>Kepala Sekolah — Pemimpin tertinggi yang bertanggung jawab atas seluruh operasional dan kebijakan IGS</p>
+                </div>
+                <div class="role-status empty">
+                    <span class="status-dot"></span>
+                    <span>空席</span>
+                </div>
+            </div>
+
+            <div class="role-item" style="--role-accent: #1a1a2e;">
+                <div class="role-glow"></div>
+                <div class="role-avatar glitch-avatar" data-text="SL">SL</div>
+                <div class="role-details">
+                    <h3>Supervisor — Leader <span class="jp-role">監督長</span></h3>
+                    <p>Ketua Pengawas — Memimpin tim supervisor, mengawasi kegiatan siswa, dan menjaga disiplin</p>
+                </div>
+                <div class="role-status empty">
+                    <span class="status-dot"></span>
+                    <span>空席</span>
+                </div>
+            </div>
+
+            <div class="role-item" style="--role-accent: #1a1a2e;">
+                <div class="role-glow"></div>
+                <div class="role-avatar glitch-avatar" data-text="SV">SV</div>
+                <div class="role-details">
+                    <h3>Supervisor — Vice <span class="jp-role">副監督</span></h3>
+                    <p>Wakil Pengawas — Membantu ketua supervisor dalam tugas pengawasan dan koordinasi</p>
+                </div>
+                <div class="role-status empty">
+                    <span class="status-dot"></span>
+                    <span>空席</span>
+                </div>
+            </div>
+
+            <div class="role-item" style="--role-accent: #C9A227;">
+                <div class="role-glow"></div>
+                <div class="role-avatar glitch-avatar" data-text="OL">OL</div>
+                <div class="role-details">
+                    <h3>OSIS — Leader <span class="jp-role">生徒会長</span></h3>
+                    <p>Ketua OSIS — Memimpin organisasi siswa intra sekolah dan merencanakan kegiatan</p>
+                </div>
+                <div class="role-status empty">
+                    <span class="status-dot"></span>
+                    <span>空席</span>
+                </div>
+            </div>
+
+            <div class="role-item" style="--role-accent: #C9A227;">
+                <div class="role-glow"></div>
+                <div class="role-avatar glitch-avatar" data-text="OV">OV</div>
+                <div class="role-details">
+                    <h3>OSIS — Vice <span class="jp-role">副生徒会長</span></h3>
+                    <p>Wakil Ketua OSIS — Mendukung ketua OSIS dalam pelaksanaan program kerja</p>
+                </div>
+                <div class="role-status empty">
+                    <span class="status-dot"></span>
+                    <span>空席</span>
+                </div>
+            </div>
+
+            <div class="role-item" style="--role-accent: #2E8B57;">
+                <div class="role-glow"></div>
+                <div class="role-avatar glitch-avatar" data-text="PL">PL</div>
+                <div class="role-details">
+                    <h3>PMR — Leader <span class="jp-role">赤十字隊長</span></h3>
+                    <p>Ketua PMR — Memimpin Palang Merah Remaja, bertanggung jawab atas kesehatan dan pertolongan pertama</p>
+                </div>
+                <div class="role-status empty">
+                    <span class="status-dot"></span>
+                    <span>空席</span>
+                </div>
+            </div>
+
+            <div class="role-item" style="--role-accent: #2E8B57;">
+                <div class="role-glow"></div>
+                <div class="role-avatar glitch-avatar" data-text="PV">PV</div>
+                <div class="role-details">
+                    <h3>PMR — Vice <span class="jp-role">副赤十字隊長</span></h3>
+                    <p>Wakil Ketua PMR — Membantu ketua PMR dalam kegiatan kesehatan dan sosial</p>
+                </div>
+                <div class="role-status empty">
+                    <span class="status-dot"></span>
+                    <span>空席</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand glitch-footer" data-text="IGS">IGS</div>
+            <p>© 2026 Indonesian Gakuran School</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+  </html>
