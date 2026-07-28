@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event — IGS</title>
+<meta name="description" content="Event Agustusan IGS — daftar lomba, sistem poin, dan kelas yang bertanding.">
+<meta name="theme-color" content="#0c0e18">
+<meta property="og:title" content="Event — Indonesian Gakuran School">
+<meta property="og:description" content="Event Agustusan IGS: Sumo Push, Estafet Lari, Arena Fighting, Hide N Seek, Werewolf, dan Debat.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%230c0e18' stroke='%23c9a355' stroke-width='4'/%3E%3Ctext x='50' y='66' font-size='46' text-anchor='middle' fill='%23ece6d6' font-family='Georgia,serif' font-weight='700'%3EI%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="event">
+
+<div class="preloader" id="preloader"><div class="preloader-crest"><span>IGS</span></div></div>
+<canvas id="sakuraCanvas"></canvas>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header id="navbar-placeholder"></header>
+
+<main>
+  <section class="page-hero">
+    <div class="bunting reveal"></div>
+    <p class="page-eyebrow reveal">Upcoming Event</p>
+    <h1 class="page-title reveal">Event Agustusan IGS</h1>
+    <p class="page-desc reveal">Raih point kelas sebanyak mungkin untuk menang, sekaligus jadi ajang testing untuk lomba Agustusan di IGS!</p>
+  </section>
+
+  <section class="competitions-section">
+    <p class="section-eyebrow reveal">Perlombaan</p>
+    <h2 class="section-title reveal">Daftar Perlombaan</h2>
+    <p class="section-subtitle reveal">Enam cabang lomba yang akan dipertandingkan antar kelas.</p>
+    <div class="competitions-grid">
+      <div class="competition-tile reveal">
+        <div class="competition-icon">🤼</div>
+        <h3>Sumo Push</h3>
+        <p>Adu kekuatan dan strategi saling mendorong hingga lawan keluar arena. Siapa paling kuat bertahan?</p>
+      </div>
+      <div class="competition-tile reveal">
+        <div class="competition-icon">🏃</div>
+        <h3>Estafet Lari</h3>
+        <p>Kekompakan dan kecepatan tim diuji dalam lomba lari beranting penuh semangat.</p>
+      </div>
+      <div class="competition-tile reveal">
+        <div class="competition-icon">⚔️</div>
+        <h3>Arena Fighting</h3>
+        <p>Pertarungan seru antar kelas untuk membuktikan siapa yang paling tangguh di atas arena.</p>
+      </div>
+      <div class="competition-tile reveal">
+        <div class="competition-icon">🙈</div>
+        <h3>Hide N Seek</h3>
+        <p>Sembunyi dan cari dengan seru — uji kejelian, kesabaran, dan kerja sama tim.</p>
+      </div>
+      <div class="competition-tile reveal">
+        <div class="competition-icon">🐺</div>
+        <h3>Werewolf Versi Gakuran</h3>
+        <p>Versi seru dari game klasik Werewolf. Siapa yang bisa bertahan sampai akhir?</p>
+      </div>
+      <div class="competition-tile reveal">
+        <div class="competition-icon">🗣️</div>
+        <h3>Debat Pro/Kontra</h3>
+        <p>Adu argumen, logika, dan keberanian menyampaikan pendapat dalam debat seru antar kelas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="points-section">
+    <p class="section-eyebrow reveal">Round Point</p>
+    <h2 class="section-title reveal">Perolehan Poin</h2>
+    <p class="section-subtitle reveal">Poin dikumpulkan atas nama kelas, bukan perorangan.</p>
+    <div class="medal-row">
+      <div class="medal reveal">
+        <span class="medal-rank">I</span>
+        <span class="medal-count" data-count-target="3">0</span>
+        <span class="medal-label">Point</span>
+      </div>
+      <div class="medal reveal">
+        <span class="medal-rank">II</span>
+        <span class="medal-count" data-count-target="2">0</span>
+        <span class="medal-label">Point</span>
+      </div>
+      <div class="medal reveal">
+        <span class="medal-rank">III</span>
+        <span class="medal-count" data-count-target="1">0</span>
+        <span class="medal-label">Point</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="classes-section">
+    <p class="section-eyebrow reveal">Peserta</p>
+    <h2 class="section-title reveal">Kelas yang Bertanding</h2>
+    <p class="section-subtitle reveal">Raih point kelas sebanyak mungkin untuk menang!</p>
+    <div class="classes-grid">
+      <div class="class-badge reveal">Kelas A</div>
+      <div class="class-badge reveal">Kelas B</div>
+      <div class="class-badge reveal">Kelas C</div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-placeholder"></div>
+<button class="scroll-top" id="scrollTop" aria-label="Kembali ke atas"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
